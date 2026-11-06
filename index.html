@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>TaskFlow - To-Do List</title>
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container for the entire application -->
+    <div class="container">
+
+        <!-- Header section: App name and tagline -->
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Plan less. Accomplish more.</p>
+        </header>
+
+        <!-- Main section containing the to-do list -->
+        <main>
+
+            <!-- Input area for adding new tasks -->
+            <div class="task-input">
+
+                <!-- User enters a task in this input field -->
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task..."
+                >
+
+                <!-- Button used to add a new task -->
+                <button id="addButton">Add Task</button>
+
+            </div>
+
+            <!-- Task items will be added here using JavaScript -->
+            <ul id="taskList">
+                <!-- JavaScript will dynamically insert tasks -->
+            </ul>
+
+        </main>
+
+        <!-- Footer section -->
+        <footer>
+            <p>Stay focused. Keep moving forward.</p>
+        </footer>
+
+    </div>
+
+    <!-- Connects the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
