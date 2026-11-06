@@ -176,3 +176,32 @@ footer {
         width: 100%;
     }
 }
+
+/* ==============================
+   10. COMPLETED TASK STYLING
+================================= */
+
+/* Shows a line through completed tasks */
+#taskList li span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* ==============================
+   11. DELETE BUTTON STYLING
+================================= */
+
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Changes button color when hovered */
+.delete-btn:hover {
+    background-color: #dc2626;
+}
