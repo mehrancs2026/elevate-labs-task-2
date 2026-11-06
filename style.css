@@ -1,0 +1,178 @@
+/* ==============================
+   1. GENERAL RESET
+   Removes default browser spacing
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   2. BODY STYLING
+   Sets the overall page appearance
+================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    min-height: 100vh;
+
+    /* Centers the app horizontally */
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+/* ==============================
+   3. MAIN CONTAINER
+   Holds the entire application
+================================= */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* ==============================
+   4. HEADER SECTION
+================================= */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   5. MAIN TASK AREA
+================================= */
+
+main {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    /* Adds a subtle shadow around the app */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==============================
+   6. TASK INPUT AREA
+   Uses Flexbox to arrange input and button
+================================= */
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.task-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    min-width: 0;
+}
+
+/* Button styling */
+.task-input button {
+    padding: 12px 18px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Changes button color when the mouse hovers over it */
+.task-input button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* ==============================
+   7. TASK LIST
+================================= */
+
+#taskList {
+    list-style: none;
+}
+
+/* Individual task styling */
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f1f5f9;
+    border-radius: 6px;
+}
+
+
+/* ==============================
+   8. FOOTER SECTION
+================================= */
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   9. RESPONSIVE DESIGN
+   Adjusts layout for smaller screens
+================================= */
+
+@media (max-width: 480px) {
+
+    /* Reduces spacing on mobile devices */
+    body {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    /* Allows the input and button to fit smaller screens */
+    .task-input {
+        flex-direction: column;
+    }
+
+    .task-input button {
+        width: 100%;
+    }
+}
